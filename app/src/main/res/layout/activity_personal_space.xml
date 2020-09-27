@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalSpaceActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="77dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="121dp"
+        app:layout_constraintLeft_toLeftOf="@id/imageView"
+    app:layout_constraintRight_toRightOf="@id/imageView"
+    app:layout_constraintTop_toBottomOf="@id/imageView"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#ccc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+<!--    <GridView-->
+<!--        android:id="@+id/gv_personalspace"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:numColumns="1"-->
+<!--        android:horizontalSpacing="10dp"-->
+<!--        android:layout_marginTop="244dp"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        tools:layout_editor_absoluteX="-12dp" />-->
+
+    <ImageView
+        android:id="@+id/image_dress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_like"
+        app:layout_constraintEnd_toStartOf="@id/image_like"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dress" />
+
+    <TextView
+        android:id="@+id/dress_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的搭配"
+        app:layout_constraintLeft_toLeftOf="@id/image_dress"
+        app:layout_constraintRight_toRightOf="@id/image_dress"
+        app:layout_constraintTop_toBottomOf="@id/image_dress" />
+
+    <ImageView
+        android:id="@+id/image_like"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/like" />
+    <TextView
+        android:id="@+id/like_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的收藏"
+        app:layout_constraintLeft_toLeftOf="@id/image_like"
+        app:layout_constraintRight_toRightOf="@id/image_like"
+        app:layout_constraintTop_toBottomOf="@id/image_like" />
+
+    <ImageView
+        android:id="@+id/image_record"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_like"
+        app:srcCompat="@drawable/record"
+        android:clickable="true"/>
+
+
+
+    <Button
+        android:id="@+id/bt_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginBottom="424dp"
+        android:text="修改密码"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_try_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="284dp"
+        android:layout_marginLeft="284dp"
+        android:layout_marginBottom="424dp"
+        android:text="试穿记录"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

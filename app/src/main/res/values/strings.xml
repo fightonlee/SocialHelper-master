@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SocialHelper</string>
+    <string name="select_file" />
+    <string name="please_install_filemanager" />
+</resources>
